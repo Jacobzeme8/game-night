@@ -2,15 +2,15 @@ import { Value } from "./Models/Value.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 import { loadState } from "./Utils/Store.js"
-import { Players } from "./Player-Model.js"
+import { Players } from "./Models/Player-Model.js"
 
 class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = loadState('values', [Value])
 
   players = [
-    new Player("Jim", "assets\img\logo.png", 0 ),
-    new Player("Tim", "assets\img\logo.png", 5)
+    new Players("Jim", "assets\img\logo.png", 0 ),
+    new Players("Tim", "assets\img\logo.png", 5)
   ]
 
 }

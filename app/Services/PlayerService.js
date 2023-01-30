@@ -1,7 +1,7 @@
-import { appState } from "./AppState";
-import { Players } from "./Player-Model";
+import { appState } from "../AppState";
+import { Players } from "../Models/Player-Model";
 
-class PlayerService {
+export class PlayerService {
 
   addPoints(name){
     let player = appState.players.find(p => p.name == name)

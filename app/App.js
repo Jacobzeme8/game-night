@@ -1,8 +1,10 @@
-import { ValuesController } from "./Controllers/ValuesController.js";
-import {}
+// import { ValuesController } from "./Controllers/ValuesController.js";
+import { PlayerController } from "./Controllers/PlayerController.js";
+// import { appState } from "./AppState.js";
 
 class App {
-  valuesController = new ValuesController();
+  // valuesController = new ValuesController();
+  playerController = new PlayerController();
 }
 
 window["player-app"] = new App();
