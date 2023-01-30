@@ -4,10 +4,13 @@ import { Players } from "../Models/Player-Model";
 
 
 export class PlayerController{
+  
   drawPlayers(){
     let players = appState.players
-    let playersTemplate = ``
-    players.forEach(p => playersTemplate += p.HTMLTemplate )
-    document.getElementById("player-app").innerHTML = playersTemplate
+    console.log(players)
+  //   let playersTemplate = ``
+  //   players.forEach(p => playersTemplate += p.HTMLTemplate )
+  //   document.getElementById("player-app").innerHTML = playersTemplate
+  // }
   }
 }
