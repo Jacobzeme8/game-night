@@ -7,4 +7,4 @@ class App {
   playerController = new PlayerController();
 }
 
-window["player-app"] = new App();
+window["app"] = new App();

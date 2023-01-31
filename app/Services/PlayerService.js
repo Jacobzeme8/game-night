@@ -1,11 +1,10 @@
-import { appState } from "../AppState";
-import { Players } from "../Models/Player-Model";
+import { appState } from "../AppState.js";
+// import { Players } from "../Models/Player-Model.js";
 
 export class PlayerService {
 
-  addPoints(name){
-    let player = appState.players.find(p => p.name == name)
-    player.score++
+  addPoints(){
+    console.log("button pressed")
   }
 
   removePoints(name){

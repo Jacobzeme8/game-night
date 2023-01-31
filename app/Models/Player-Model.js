@@ -18,7 +18,7 @@ get HTMLTemplate(){
     <img class="img-fluid" src="${this.picture}" alt="">
     <h2>${this.name}</h2>
     <h3>Score: ${this.score}</h3>
-    <button class = "btn btn-success">+</button>
+    <button onclick = "app.playerController.PlayerService.addPoints()" class = "btn btn-success">+</button>
     <button class = "btn btn-danger">-</button>
   </div>
 </div>`
